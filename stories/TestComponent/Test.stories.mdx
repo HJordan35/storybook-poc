@@ -1,0 +1,27 @@
+<!---Badge.stories.mdx --->
+
+import Test from "./Test";
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { withHTML } from "@whitespace/storybook-addon-html/html";
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = () => {
+  return Test("Hello");
+};
+
+<Meta title="Hello" />
+
+# Tabs
+
+Let's define a story for our `Tabs` component:
+
+<Story
+  name="basic"
+  args={{
+    status: "positive",
+    label: "Positive",
+  }}
+>
+  {Template.bind({})}
+</Story>
